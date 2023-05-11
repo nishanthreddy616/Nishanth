@@ -1,0 +1,48 @@
+<!-- <p>weather works!</p>
+<h1>weather app</h1>
+<div>
+    <label for="latitude">Latitude:</label>
+    <input type="text" id="latitude" [(ngModel)]="lat">
+  
+    <label for="longitude">Longitude:</label>
+    <input type="text" id="longitude" [(ngModel)]="long">
+  </div>
+  <button (click)="onResultsButtonClick()">Results</button>
+
+  <h1>{{weather.name}}</h1>
+  <h1>{{weather.weather[0].description}}</h1>
+  <h1>Temperature in Kelvin :{{Kelvin}}</h1>
+  <h1>Temperature in Celsious :{{celsius}}</h1>
+  <h1>Temperature in fahrenheit :{{fahrenheit}}</h1>
+  <div style="background-image: url('{{imageurl}}'); background-size: cover; background-position: center center; height: 1000px;"></div>
+
+   -->
+<html>
+  <head>
+    <title>My Weather App</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./weather.component.scss"> -->
+  </head>
+    <header>
+      <h1>My Weather App</h1>
+    </header>
+   
+          <label for="latitude">Latitude:</label>
+          <input type="text" id="latitude" [(ngModel)]="lat" placeholder="Enter latitude">
+          <label for="longitude">Longitude:</label>
+          <input type="text" id="longitude" [(ngModel)]="long" placeholder="Enter longitude">
+
+        <!-- <button (click)="onResultsButtonClick()" type="submit">Get Weather</button> -->
+        <button (click)="onResultsButtonClick()">Results</button>
+        <body>
+        <h2>{{weather.name}}</h2>
+        <p>{{weather.weather[0].description}}</p>
+        <p>Temperature in Kelvin: {{Kelvin}}</p>
+        <p>Temperature in Celsius: {{celsius}}</p>
+        <p>Temperature in Fahrenheit: {{fahrenheit}}</p>
+        <div style="background-image: url('{{imageurl}}'); background-size: cover; background-position: center center; height: 1000px;"></div>
+    </body>
+
+    <footer>
+      <p>&copy; 2023 My Weather App</p>
+    </footer>
+</html>
