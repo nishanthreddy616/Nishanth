@@ -11,12 +11,12 @@ export class WeatherService {
 
   }
  getWeather(lat:any,long:any): Observable<any> {
-   return this.http.get<any>(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=e532519efa2ede48c4c1abe1e26004c0`);
+   return this.http.get<any>(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=//OpenWeatherAPIHere`);
  }
   generateImage(prompt: string): Observable<any> {
   const headers = new HttpHeaders()
     .set('Content-Type', 'application/json')
-    .set('Authorization', 'Bearer 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');
+    .set('Authorization', 'Bearer //OpenAIAPIHere');
 
   const body = {
     model: 'image-alpha-001',
